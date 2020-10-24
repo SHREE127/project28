@@ -18,7 +18,10 @@ class mango {
     display(){
         var pos = this.body.position;
 
+        push();
+        translate(pos.x,pos.y)
         imageMode(CENTER);
         image(this.image,pos.x,pos.y,this.width-1000,this.height-800)
+        pop();
     }
   };
